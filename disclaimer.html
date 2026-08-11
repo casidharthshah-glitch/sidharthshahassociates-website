@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disclaimer | Sidharth Shah & Associates</title>
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/logo/ca-logo.webp">
+
+    <!-- Website Protection CSS (Disables Highlighting) -->
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- Top Contact Bar -->
     <div class="top-bar">
         <div class="container">
             <div class="row align-items-center">
@@ -24,11 +46,15 @@
             </div>
         </div>
     </div>
+
+    <!-- Compliance Alert (Moving) -->
     <div class="alert-bar">
         <div class="scrolling-text">
-            <i class="fas fa-bullhorn"></i> <strong>Compliance Update:</strong> ITR Filing for Individuals (FY 2025-26) is due on 31st July. Stay compliant, file early!
+            <i class="fas fa-bullhorn"></i> <strong>Compliance Update:</strong> ITR Filing for Businesses & Professionals (Non-Audit) for FY 2025-26 is due on 31st August. Stay compliant, file early!
         </div>
     </div>
+
+    <!-- Header -->
     <header class="main-header sticky-top bg-white shadow-sm">
         <nav class="navbar navbar-expand-lg navbar-light py-2">
             <div class="container">
@@ -52,6 +78,7 @@
         </nav>
     </header>
 
+    <!-- Page Header -->
     <section class="page-header text-center">
         <div class="container">
             <h1 class="display-5 fw-bold text-white mb-3">Disclaimer</h1>
@@ -59,12 +86,14 @@
         </div>
     </section>
 
+    <!-- Disclaimer Content -->
     <section class="py-5 bg-white">
         <div class="container py-4">
             <div class="row">
                 <div class="col-lg-10 mx-auto text-muted">
                     <h4 class="text-dark fw-bold mb-3">No Professional Advice</h4>
                     <p class="mb-4">The information contained on this website is for general information purposes only. The information does not constitute legal, financial, or tax advice, and you should not act upon any such information without seeking independent professional advice.</p>
+                    
                     <h4 class="text-dark fw-bold mb-3">No Client Relationship</h4>
                     <p class="mb-4">Visiting this website or communicating with us via email or contact forms does not create a Chartered Accountant-client relationship.</p>
                 </div>
@@ -72,6 +101,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-3">
         <div class="container pt-4">
             <div class="row gy-4 mb-5">
@@ -102,20 +132,41 @@
                 <div class="col-lg-3">
                     <h5 class="text-white fw-bold mb-4">Contact Us</h5>
                     <ul class="list-unstyled text-white-50">
-                        <li class="mb-3"><i class="fas fa-map-marker-alt text-gold me-2"></i> B-211, 2nd Floor, Deep Jyoti Co-op Hsg. Society, Near Shahad Railway Station, Shahad (West), Kalyan - 421103</li>
+                        <li class="mb-3"><i class="fas fa-map-marker-alt text-gold me-2"></i> B-211, 2nd Floor, Deep Jyoti Co-op Hsg. Society, Near Shahad Railway Station, Behind Sapna Hotel, Shahad (West), Kalyan - 421103</li>
                         <li class="mb-3"><i class="fas fa-phone-alt text-gold me-2"></i> <a href="tel:+919867361469" class="text-white-50 text-decoration-none hover-gold">+91 98673 61469</a></li>
                         <li class="mb-3"><i class="fas fa-envelope text-gold me-2"></i> <a href="mailto:ca@sidharthshahassociates.in" class="text-white-50 text-decoration-none hover-gold">ca@sidharthshahassociates.in</a></li>
                     </ul>
                 </div>
             </div>
+
+            <!-- Seamless Copyright Footer -->
             <div class="border-top border-secondary pt-4 text-center">
-                <!-- Copyright text updated to match your changes -->
-                <p class="text-white-50 small mb-0">Sidharth Shah & Associates | <a href="privacy-policy.html" class="text-white-50 hover-gold">Privacy Policy</a> | <a href="disclaimer.html" class="text-white-50 hover-gold">Disclaimer</a></p>
+                <p class="text-white-50 small mb-1">Sidharth Shah & Associates | <a href="privacy-policy.html" class="text-white-50 hover-gold text-decoration-none">Privacy Policy</a> | <a href="disclaimer.html" class="text-white-50 hover-gold text-decoration-none">Disclaimer</a></p>
+                <p class="mb-0 mt-2" style="font-size: 0.85rem; color: #adb5bd;">
+                    &copy; 2026 Sidharth Shah & Associates. All Rights Reserved. <br>
+                    Unauthorized reproduction, copying, or distribution of this content is strictly prohibited.
+                </p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp -->
     <a href="https://wa.me/919867361469" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <!-- Website Protection JavaScript (Disables Right Click and Copying) -->
+    <script>
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+        document.onkeydown = function(e) {
+            if (e.keyCode === 123) return false; // F12
+            if (e.ctrlKey || e.metaKey) {
+                if (e.keyCode === 67 || e.keyCode === 88 || e.keyCode === 85 || e.keyCode === 83) return false; // Ctrl+C, X, U, S
+            }
+        };
+        document.addEventListener('dragstart', function(e) { e.preventDefault(); });
+    </script>
+
 </body>
 </html>

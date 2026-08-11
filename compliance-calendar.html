@@ -25,6 +25,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="icon" href="assets/images/logo/ca-logo.webp">
+
+    <!-- Website Protection CSS (Disables Highlighting) -->
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
 </head>
 
 <body>
@@ -53,7 +63,7 @@
     <!-- Compliance Alert (Moving) -->
     <div class="alert-bar">
         <div class="scrolling-text">
-            <i class="fas fa-bullhorn"></i> <strong>Compliance Update:</strong> ITR Filing for Individuals (FY 2025-26) is due on 31st July. Stay compliant, file early!
+            <i class="fas fa-bullhorn"></i> <strong>Compliance Update:</strong> ITR Filing for Businesses & Professionals (Non-Audit) for FY 2025-26 is due on 31st August. Stay compliant, file early!
         </div>
     </div>
 
@@ -62,8 +72,9 @@
         <nav class="navbar navbar-expand-lg navbar-light py-2">
             <div class="container">
                 <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo/ca-logo.webp" alt="Sidharth Shah & Associates" height="60">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo/ca-logo.webp" alt="CA Logo" height="50" class="me-2">
+                    <span class="fw-bold text-primary fs-5 mb-0">Sidharth Shah & Associates</span>
                 </a>
                 
                 <!-- Mobile Menu Button -->
@@ -112,24 +123,24 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="fw-bold text-danger">31st July</td>
-                                    <td><span class="badge bg-primary">Income Tax</span></td>
-                                    <td>Filing of Income Tax Return (ITR) for individuals and entities whose accounts are not required to be audited.</td>
-                                </tr>
-                                <tr>
                                     <td class="fw-bold text-danger">15th August</td>
                                     <td><span class="badge bg-secondary">EPF & ESIC</span></td>
-                                    <td>Due date for payment of Provident Fund (PF) and ESIC contributions for the previous month.</td>
+                                    <td>Due date for payment of Provident Fund (PF) and ESIC contributions for the month of July.</td>
                                 </tr>
                                 <tr>
                                     <td class="fw-bold text-danger">20th August</td>
                                     <td><span class="badge bg-gold text-dark">GST</span></td>
-                                    <td>Due date for filing GSTR-3B for the previous month (for regular taxpayers).</td>
+                                    <td>Due date for filing GSTR-3B for the month of July (for regular taxpayers).</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-danger">31st August</td>
+                                    <td><span class="badge bg-primary">Income Tax</span></td>
+                                    <td>Due date for filing Income Tax Return (ITR) for businesses & professionals (non-audit cases) for FY 2025-26.</td>
                                 </tr>
                                 <tr>
                                     <td class="fw-bold text-danger">15th September</td>
                                     <td><span class="badge bg-primary">Income Tax</span></td>
-                                    <td>Due date for payment of the 2nd instalment of Advance Tax for the current financial year.</td>
+                                    <td>Due date for payment of the 2nd instalment of Advance Tax for the current financial year (FY 2026-27).</td>
                                 </tr>
                                 <tr>
                                     <td class="fw-bold text-danger">30th September</td>
@@ -156,11 +167,6 @@
                 <div class="col-lg-4 pe-lg-5">
                     <h5 class="text-white fw-bold mb-4">Sidharth Shah & Associates</h5>
                     <p class="text-white-50">Providing professional, reliable, and comprehensive Chartered Accountancy services tailored to individuals and businesses across India.</p>
-                    <div class="social-links mt-4">
-                        <a href="#" class="text-white-50 me-3 fs-5 hover-gold"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-white-50 me-3 fs-5 hover-gold"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white-50 me-3 fs-5 hover-gold"><i class="fab fa-facebook"></i></a>
-                    </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="text-white fw-bold mb-4">Quick Links</h5>
@@ -191,8 +197,15 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Seamless Copyright Footer -->
             <div class="border-top border-secondary pt-4 text-center">
-<p class="text-white-50 small mb-0">Sidharth Shah & Associates | <a href="privacy-policy.html" class="text-white-50 hover-gold">Privacy Policy</a> | <a href="disclaimer.html" class="text-white-50 hover-gold">Disclaimer</a></p>            </div>
+                <p class="text-white-50 small mb-1">Sidharth Shah & Associates | <a href="privacy-policy.html" class="text-white-50 hover-gold text-decoration-none">Privacy Policy</a> | <a href="disclaimer.html" class="text-white-50 hover-gold text-decoration-none">Disclaimer</a></p>
+                <p class="mb-0 mt-2" style="font-size: 0.85rem; color: #adb5bd;">
+                    &copy; 2026 Sidharth Shah & Associates. All Rights Reserved. <br>
+                    Unauthorized reproduction, copying, or distribution of this content is strictly prohibited.
+                </p>
+            </div>
         </div>
     </footer>
 
@@ -203,6 +216,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <!-- Website Protection JavaScript (Disables Right Click and Copying) -->
+    <script>
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+        document.onkeydown = function(e) {
+            if (e.keyCode === 123) return false; // F12
+            if (e.ctrlKey || e.metaKey) {
+                if (e.keyCode === 67 || e.keyCode === 88 || e.keyCode === 85 || e.keyCode === 83) return false; // Ctrl+C, X, U, S
+            }
+        };
+        document.addEventListener('dragstart', function(e) { e.preventDefault(); });
+    </script>
 
 </body>
 </html>
